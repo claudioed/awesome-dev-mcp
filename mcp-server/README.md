@@ -72,6 +72,34 @@ fastmcp run server.py
 - `file://current-directory`: Current working directory
 - `file://system-info`: System and Python environment information
 
+## Available Prompts
+
+The server includes a comprehensive collection of specialized prompts organized by category:
+
+### 🏗️ Architecture & Design
+- **`api_development_prompt`**: API development specialist for creating robust, well-documented APIs
+- **`backend_developer_prompt`**: Backend development expert for high-performance, scalable server applications
+- **`database_designer_prompt`**: Database architecture expert for high-performance, scalable database systems
+- **`ddd_architect_prompt`**: Domain-driven design expert specializing in DDD architecture and best practices
+
+### 💻 Development & Code Quality
+- **`code_review_prompt`**: Comprehensive code review checklist and guidelines
+- **`debugging_prompt`**: Systematic debugging approach and troubleshooting steps
+- **`quality_specialist_prompt`**: Code quality specialist for consistent development standards
+- **`git_workflow_prompt`**: Git workflow best practices and common commands
+- **`project_structure_prompt`**: Guidelines for organizing project structure and architecture
+
+### 🔍 Specialization & Advanced Topics
+- **`code_debugger_prompt`**: Advanced debugging expert for systematic problem identification and root cause analysis
+- **`tech_writer_prompt`**: Technical documentation specialist for clear, comprehensive documentation
+
+### Usage Example
+```python
+# Access prompts via the MCP client
+# These prompts provide specialized expertise for different development scenarios
+prompt_response = mcp_client.get_prompt("backend_developer_prompt")
+```
+
 ## Security Features
 
 - Command execution timeout (30 seconds default)
