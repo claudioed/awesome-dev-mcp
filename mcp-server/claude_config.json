@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "development-tools": {
+      "command": "uv",
+      "args": ["run", "server.py"],
+      "cwd": "/Users/claudioeduardodeoliveira/development/github/awesome-dev-mcp/mcp-server",
+      "env": {
+        "PATH": "${HOME}/.local/bin:${PATH}"
+      }
+    }
+  }
+}
